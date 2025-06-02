@@ -64,16 +64,23 @@ h1 {
 
 .fotos {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* 🧠 Esto permite que las fotos bajen de línea */
   justify-content: center;
   gap: 10px;
   padding: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .foto {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.foto:hover {
+  transform: scale(1.05); /* efecto lindo al pasar el mouse */
 }
