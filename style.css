@@ -64,14 +64,16 @@ h1 {
 
 .fotos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 10px;
+  padding: 10px;
 }
 
 .foto {
-  width: 150px; /* Ajusta el tamaño de la imagen (más pequeña) */
-  height: auto;  /* Mantiene la proporción de la imagen */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
