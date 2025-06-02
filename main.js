@@ -52,7 +52,7 @@ if (hora < 12) {
 } else if (hora < 18) {
   mensajeDinamico.innerHTML = 'Wenas tardes, mi vida! 💞';
 } else {
-  mensajeDinamico.innerHTML = 'Buenas noches, princesa! 🌙';
+  mensajeDinamico.innerHTML = 'Buenas noches, mi princesa bella. que descanses linda! 🌙';
 }
 
 if (hora < 12) {
