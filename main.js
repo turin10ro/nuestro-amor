@@ -54,11 +54,3 @@ if (hora < 12) {
 } else {
   mensajeDinamico.innerHTML = 'Buenas noches, mi princesa bella, que descanses linda! 🌙';
 }
-
-if (hora < 12) {
-  pMensaje.innerHTML = '¡Buenos días, amor! 💕';
-} else if (hora < 18) {
-  pMensaje.innerHTML = '¡Buenas tardes, mi vida! 💞';
-} else {
-  pMensaje.innerHTML = '¡Buenas noches, mi cielo! 🌙';
-}
