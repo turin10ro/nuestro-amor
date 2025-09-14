@@ -71,11 +71,11 @@ h1 {
 
 .fotos {
   display: flex;
-  flex-wrap: wrap; /* 🧠 Esto permite que las fotos bajen de línea */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  max-width: 1000%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -85,9 +85,20 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.6s ease, transform 0.6s ease;
+  
+  opacity: 0;
+  transform: translateY(30px);
 }
 
-.foto:hover {
-  transform: scale(1.05); /* efecto lindo al pasar el mouse */
+.foto.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .foto {
+    width: 45vw; /* ancho adaptable en móviles */
+    height: auto; /* mantener proporción */
+  }
 }
