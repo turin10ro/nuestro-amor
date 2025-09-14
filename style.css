@@ -52,14 +52,21 @@ h1 {
 }
 
 #playBtn {
-  margin-top: 30px;
-  padding: 10px 20px;
+  margin: 30px auto;
+  padding: 12px 25px;
   font-size: 1rem;
   background-color: #ff69b4;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#playBtn:hover {
+  background-color: #e055a1;
 }
 
 .fotos {
@@ -68,8 +75,8 @@ h1 {
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 1000%;
+  margin: 0 auto;
 }
 
 .foto {
