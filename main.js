@@ -54,3 +54,15 @@ if (hora < 12) {
 } else {
   mensajeDinamico.innerHTML = 'Buenas noches, mi princesa bella, que descanses linda! 🌙';
 }
+
+// 📸 Generar galería de fotos automáticamente
+const galeria = document.getElementById('galeria');
+
+for (let i = 1; i <= 89; i++) {
+  const img = document.createElement('img');
+  img.src = `images/foto${i}.jpeg`;
+  img.alt = `Foto ${i} de nosotros`;
+  img.className = 'foto';
+  img.loading = 'lazy'; // Para optimizar el rendimiento
+  galeria.appendChild(img);
+}
