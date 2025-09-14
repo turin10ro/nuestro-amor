@@ -66,3 +66,19 @@ for (let i = 1; i <= 89; i++) {
   img.loading = 'lazy'; // Para optimizar el rendimiento
   galeria.appendChild(img);
 }
+
+const fotos = document.querySelectorAll('.foto');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+fotos.forEach(foto => {
+  observer.observe(foto);
+});
