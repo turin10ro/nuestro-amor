@@ -55,6 +55,13 @@ if (hora < 12) {
   mensajeDinamico.innerHTML = 'Buenas noches, mi princesa bella, que descanses linda! 🌙';
 }
 
+// Aplicar color rojo a ambos
+mensajeFijo.style.color = '#ff0000';
+mensajeDinamico.style.color = '#ff0000';
+// Agregar efecto de latido
+mensajeFijo.classList.add('latido');
+mensajeDinamico.classList.add('latido');
+
 // 📸 Generar galería de fotos automáticamente
 const galeria = document.getElementById('galeria');
 
