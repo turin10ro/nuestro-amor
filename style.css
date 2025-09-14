@@ -1,6 +1,6 @@
 body {
   background-color: #e75480;
-  color: #d63384;
+  color: #fff5f7;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
   padding-top: 50px;
@@ -28,7 +28,7 @@ h1 {
 
 .corazon {
   position: absolute;
-  color: #ff69b4;
+  color: #d64141;
   font-size: 2rem;
   animation: flotar 5s linear infinite;
   opacity: 0.8;
@@ -43,6 +43,22 @@ h1 {
     transform: translateY(-100vh) scale(1.5);
     opacity: 0;
   }
+}
+
+@keyframes latidoRojo {
+  0%, 100% {
+    color: #ff0000;
+    transform: scale(1);
+  }
+  50% {
+    color: #c62828;
+    transform: scale(1.05);
+  }
+}
+
+.latido {
+  animation: latidoRojo 1s infinite;
+  font-weight: bold;
 }
 
 .mensaje {
@@ -102,4 +118,3 @@ h1 {
     height: auto; /* mantener proporción */
   }
 }
-
