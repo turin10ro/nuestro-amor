@@ -65,7 +65,7 @@ mensajeDinamico.classList.add('latido');
 // 📸 Generar galería de fotos automáticamente
 const galeria = document.getElementById('galeria');
 
-for (let i = 1; i <= 110; i++) {
+for (let i = 1; i <= 121; i++) {
   const img = document.createElement('img');
   img.src = `images/foto${i}.jpeg`;
   img.alt = `Foto ${i} de nosotros`;
@@ -89,3 +89,4 @@ const observer = new IntersectionObserver((entries) => {
 fotos.forEach(foto => {
   observer.observe(foto);
 });
+
