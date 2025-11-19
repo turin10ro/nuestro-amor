@@ -118,3 +118,130 @@ h1 {
     height: auto; /* mantener proporción */
   }
 }
+
+/* ========================
+   🎉 ESTILOS DE ANIVERSARIO
+   ======================== */
+
+/* Fondo especial romántico */
+.fondo-aniversario {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  transition: background 1s ease-in-out;
+}
+
+/* Glow dorado para el contador */
+#tiempo.aniversario {
+  animation: glow 1.8s infinite;
+  font-weight: bold;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px gold; }
+  50% { text-shadow: 0 0 20px gold; }
+  100% { text-shadow: 0 0 5px gold; }
+}
+
+/* Texto flotante */
+.flotante {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  animation: flotanteUp 3s forwards ease-out;
+  z-index: 9999;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff4f8b;
+}
+
+@keyframes flotanteUp {
+  0% { opacity: 0; transform: translate(-50%, 20px); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -200px); }
+}
+
+/* Carta romántica */
+.carta-aniversario {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #b30045;
+  padding: 25px;
+  width: 85%;
+  max-height: 70vh;
+  max-width: 350px;
+  overflow-y: auto;
+  padding-right: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 50, 120, 0.6);
+  z-index: 99999;
+  animation: aparecer 0.5s ease-out;
+}
+
+.carta-aniversario h2 {
+  margin-bottom: 10px;
+}
+
+.carta-aniversario::-webkit-scrollbar {
+  width: 8px;
+}
+
+.carta-aniversario::-webkit-scrollbar-thumb {
+  background: #ff4f8b;
+  border-radius: 10px;
+}
+
+#cerrarCarta {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff4f8b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#cerrarCarta:hover {
+  background: #e6005c;
+}
+
+@keyframes aparecer {
+  0% { opacity: 0; transform: scale(0.7) translate(-50%, -50%); }
+  100% { opacity: 1; transform: scale(1) translate(-50%, -50%); }
+}
+
+.desvanecer {
+  animation: desvanecer 0.4s forwards;
+}
+
+@keyframes desvanecer {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.7); }
+}
+
+/* Fotos especiales */
+.foto-especial {
+  border: 3px solid gold;
+  box-shadow: 0 0 15px gold;
+}
+
+/* Videos especiales (mismo estilo que las fotos pero adaptado) */
+.video-especial {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px gold;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.video-especial.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
