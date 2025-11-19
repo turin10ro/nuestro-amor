@@ -100,10 +100,10 @@ const dia = hoy.getDate();
 const mes = hoy.getMonth() + 1;
 
 // --- MODO PRUEBA (borra esta línea después) ---
- const modoPrueba = true;
+// const modoPrueba = true;
 
 // Día especial: 19 del mes (mañana)
-if (dia === 19 || modoPrueba) { // if (dia === 19 || modoPrueba)
+if (dia === 19) { // if (dia === 19 || modoPrueba)
 
   // 1️⃣ Cambiar fondo a un degradado suave romántico
   document.body.classList.add("fondo-aniversario");
@@ -177,3 +177,4 @@ videosEspeciales.forEach(src => {
 });
 
 }
+
