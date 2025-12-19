@@ -100,7 +100,7 @@ const dia = hoy.getDate();
 const mes = hoy.getMonth() + 1;
 
 // --- MODO PRUEBA (borra esta línea después) ---
-// const modoPrueba = true;
+//const modoPrueba = true;
 
 // Día especial: 19 del mes (mañana)
 if (dia === 19) { // if (dia === 19 || modoPrueba)
@@ -118,9 +118,9 @@ if (dia === 19) { // if (dia === 19 || modoPrueba)
     }, i * 50);
   }
 
-  // 4️⃣ Texto flotante “7 meses juntos”
+  // 4️⃣ Texto flotante “8 meses juntos”
   const flotante = document.createElement("div");
-  flotante.innerText = "💘 ¡Feliz 7° mes, mi amor! 💘";
+  flotante.innerText = "💘 ¡Feliz 8° mes, mi amor! 💘";
   flotante.classList.add("flotante");
   document.body.appendChild(flotante);
 
@@ -130,22 +130,21 @@ if (dia === 19) { // if (dia === 19 || modoPrueba)
   const carta = document.createElement("div");
   carta.classList.add("carta-aniversario");
   carta.innerHTML = `
-    <h2>💖 Feliz Séptimo Mes, amor de mi vida 💖</h2>
+    <h2>💖 Feliz Octavo Mes, amor de mi vida 💖</h2>
     <p>
-      Oye mi nena pechocha, gracias por cada risa, por cada abrazo y por cada momento hermoso que hemos compartido.  
-      Eres mi alegría diaria y el mejor regalo que me ha dado la vida, que me ha dado Dios, sabes que soy tan feliz contigo mi amor. 
+      Mi amor felices ocho meses princesa hermosa, juntados un poquito con mi cumple amor jijiji, APAGA LA VELAAAAA JAJAJAJJ mi amor, la verdad quiero decirte que estoy tan agradecido contigo mi niña,
+      tan agradecido de que estés junto a mí, que podamos pasar este último mes del año juntos, que podamos festejar incluso nuestros cumples amor, te amo pequeña.
     </p>
     <p>
-      Mi princesa hermosa, quiero decirte que me siento tan bien contigo, tan feliz, tan tranquilo, tan amado, y me encanta tanto que sea así mi amor.
-      Tengo que decirte que eres una persona muy especial para mí, mi amor, que cada detalle que me has dado lo aprecio con todo mi corazón.
+      Peque, en verdad cada día puedo seguir confirmando que eres el amor de mi vida entera, que eres mi amor eterno, ese amor que quiero para toda la vida, hasta el último de mis días, mi niña quiero vernos crecer tanto, personalmente, y como pareja,
+      creo que somos en verdad una gran relación, una conexión muy linda, que no tiene nada qué envidiarle a ninguna otra, unidos somos lo mejor princesa mía, te adoro, gracias por tanto mi amor, poque la vida te puso en mi camino por una razón, poque en verdad siempre fuiste todo lo que soñé y pienso que hasta mucho más mi amor.
     </p>
     <p>
-      Mi amor, me fascina voltear atrás y recordar tanto que hemos vivido juntos, los muy buenos momentos, de risa, llenos de amor, cariño, felicidad, algunos malos, malos amor, pero recordando que siempre nos elegimos, y cuánto nos amamos nos da esperanza de no soltarnos jamás.
-      Yo deseo con toda el alma que así sea siempre, tú mi 11:11 amor, mi futuro en tus ojitos pechocha, eres todo lo que quiero, esperaremos nuevas aventuras chiquilla linda, y que si vienen malos ratos, nosotros juntos somos más fuertes que ellos.
+      Sin duda este mes tuvo lo suyo, y aunque tuvimos unos inconvenientes mi amor, la verdad es que no está arruinado nuestro mes, para ñada pechocha, es nuestro mes mi amor, cerraremos este año e iniciaremos uno nuevo, uno nuevo lleno de aventuras, dates, momentos, y mucho días para crear recuerdos, bechitos, abrazos, palabras, mensajes, todo todo lo que hace un nosotros en verdad mi amor.
     </p>
     <p>
-      Hemos contruido pero demasiado amor, y seguirá siendo así, somos un gran equipo, compañeros de vida señora nutria, yo quiero verte triunfar, quiero ver a mi hermosa graduarse de la prepa y de su carrera, quiero vernos crecer juntos y formar un hogar después mi amor, me ilusiona tanto corazón.
-      En verdad mi melocotón, te amo con todo mi corazón. 💞
+      Gracias por ser tú, por estár a mi lado, poque en verdad no te cambiaría por nada, por nada mi amor, eres lo mejor, mi anhelo, poque necesito de tu aliento, de tus besos, abrazos, ojitos, tu cuerpo, de tus sentimientos, de ti mi amor, gachas por estos 8 meses princesa, nos espera tanto en verdad mi amor, una vida juntos,
+      este nuevo año que viene será increíble, viviremos tanto, nos tenemos mi amor, somos un gran equipo jamás lo olvides preciosa, seguiremos consstruyendo este bonito amor, ya tenemos un concierto ehhhhh mi amor, te amo me encantas, muchas aventuras vienen, gachas gachas por tanto peque, te adoro cielo muaaack mi amor. 💞
     </p>
     <button id="cerrarCarta">Cerrar 💗</button>
   `;
@@ -177,4 +176,3 @@ videosEspeciales.forEach(src => {
 });
 
 }
-
