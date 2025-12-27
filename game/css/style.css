@@ -1,0 +1,222 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffd6e8, #fff);
+  text-align: center;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 14px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background: #ff5fa2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff3f8e;
+}
+
+h1, h2 {
+  color: #d63384;
+}
+
+/* ===== JUEGO NIVEL 1 & 2 ===== */
+#game {
+  width: 90vw;
+  max-width: 420px;
+  height: 70vw;
+  max-height: 300px;
+  border: 3px solid #ff5fa2;
+  border-radius: 20px;       
+  box-shadow: 0 4px 12px rgba(255, 95, 162, 0.3);
+  background-color: #fff;    
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;          
+  touch-action: manipulation; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+}
+
+@media (max-width: 600px) {
+  #game {
+    height: 90vw; 
+    max-height: none; 
+    padding: 30px; 
+  }
+}
+
+#game div {
+  user-select: none;
+}
+
+#game div:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px #ff5fa2);
+}
+
+#player, #goal {
+  font-size: 36px;
+  position: absolute;
+  transition: left 0.15s, top 0.15s;
+  user-select: none;
+}
+
+.hint {
+  color: #555;
+}
+
+#controls {
+  margin-top: 15px;
+}
+
+#controls button {
+  font-size: 24px;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff5fa2;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(255, 95, 162, 0.7);
+}
+
+#puzzle div {
+  transition: transform 0.2s;
+}
+
+#puzzle div:active {
+  transform: scale(0.95);
+}
+
+/* ===== NIVEL 5 – DIBUJAR ===== */
+#draw {
+  width: 90vw;
+  max-width: 400px;
+  height: 90vw;
+  max-height: 400px;
+  border: 3px solid #ff5fa2;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
+  background: white;
+  touch-action: none;
+}
+
+/* ===== NIVEL 6 – PASTEL ===== */
+.level-container {
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Pastel en grid */
+#cake {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  background: #fff;
+  border: 3px solid #ff5fa2;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 300px;
+}
+
+/* Velas */
+.candle {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.candle:active {
+  transform: scale(1.2);
+}
+
+/* Vela apagada */
+.candle.off {
+  opacity: 0.25;
+  transform: scale(0.8);
+  cursor: default;
+}
+
+/* Mensaje final */
+#message {
+  display: none;
+  color: #d63384;
+  font-weight: bold;
+  margin-top: 25px;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Confetti */
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== TEXTOS Y BOTONES ADICIONALES ===== */
+.header-text {
+  text-align: center;
+  color: #d63384;
+  margin-top: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+#next-level {
+  display: none;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5fa2;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
