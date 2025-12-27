@@ -10,22 +10,35 @@
 <body>
   <h1>💖 Nuestro tiempo juntos 💖</h1>
   <p id="tiempo"></p>
-  <p id="mensajeFijo" class="mensaje">Cada segundo a tu lado es un regalo que valoro con todo mi corazón 💞</p>
+  <p id="mensajeFijo" class="mensaje">
+    Cada segundo a tu lado es un regalo que valoro con todo mi corazón 💞
+  </p>
   <p id="mensajeDinamico" class="mensaje"></p>
+
   <div class="corazones"></div>
 
-  <!-- Sección de fotos -->
   <div class="fotos" id="galeria"></div>
 
-  <!-- Audio y botón después del contenido -->
   <audio id="musica" loop>
     <source src="audio/somosNovios.mp3" type="audio/mpeg">
   </audio>
 
-  <button id="playBtn">▶ Escuchar nuestra canción</button>
+  <audio id="mensaje1" loop>
+    <source src="audio/m1Bonito.mp3" type="audio/mpeg">
+  </audio>
 
-  <!-- Script al final del body -->
+  <audio id="mensaje2" loop>
+    <source src="audio/m2Bonito.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="contenedor-botones">
+    <button id="playCancion">▶ Nuestra canción</button>
+    <button id="playMensaje1">💌 Promesa 1</button>
+    <button id="playMensaje2">💖 Promesa 2</button>
+    <button id="stopBtn">⏹ Parar audio</button>
+    <a href="game/index.html"><button>🎮 Ir al juego</button></a>
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
-
