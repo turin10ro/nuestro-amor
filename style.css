@@ -67,8 +67,14 @@ h1 {
   color: #c2185b;
 }
 
-#playBtn {
+.contenedor-botones {
   margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contenedor-botones button {
   padding: 12px 25px;
   font-size: 1rem;
   background-color: #ff69b4;
@@ -76,12 +82,11 @@ h1 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  display: block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
 
-#playBtn:hover {
+.contenedor-botones button:hover {
   background-color: #f50057;
 }
 
