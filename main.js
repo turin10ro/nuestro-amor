@@ -34,12 +34,33 @@ function crearCorazon() {
 
 setInterval(crearCorazon, 500);
 
-const playBtn = document.getElementById("playBtn");
+const playCancionBtn = document.getElementById("playCancion");
+const playMensaje1Btn = document.getElementById("playMensaje1");
+const playMensaje2Btn = document.getElementById("playMensaje2");
+const stopBtn = document.getElementById("stopBtn");
 const musica = document.getElementById("musica");
+const mensaje1 = document.getElementById("mensaje1");
+const mensaje2 = document.getElementById("mensaje2");
 
-playBtn.addEventListener("click", () => {
+playCancionBtn.addEventListener("click", () => {
   musica.play();
-  playBtn.style.display = "none"; //Oculta el botón después de reproducir.
+});
+
+playMensaje1Btn.addEventListener("click", () => {
+  mensaje1.play();
+});
+
+playMensaje2Btn.addEventListener("click", () => {
+  mensaje2.play();
+});
+
+stopBtn.addEventListener("click", () => {
+  musica.pause();
+  musica.currentTime = 0;
+  mensaje1.pause();
+  mensaje1.currentTime = 0;
+  mensaje2.pause();
+  mensaje2.currentTime = 0;
 });
 
 const mensajeFijo = document.getElementById('mensajeFijo');
@@ -176,4 +197,3 @@ videosEspeciales.forEach(src => {
 });
 
 }
-
