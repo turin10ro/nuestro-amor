@@ -1,9 +1,27 @@
+/* ✅ Asegurar que no haya overflow horizontal */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #e75480;
   color: #fff5f7;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  padding-top: 50px;
+  padding: 20px 10px; /* ← Cambiado de "padding-top: 50px" a padding simétrico */
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -98,6 +116,7 @@ h1 {
   padding: 10px;
   max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .foto {
@@ -249,4 +268,29 @@ h1 {
 .video-especial.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* === BOTONES RESPONSIVOS PARA MÓVILES === */
+@media (max-width: 600px) {
+  .contenedor-botones {
+    flex-direction: column;
+    gap: 8px;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  .contenedor-botones button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    border-radius: 8px;
+  }
+
+  .contenedor-botones a {
+    width: 100%;
+    display: inline-block;
+  }
 }
