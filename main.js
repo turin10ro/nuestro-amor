@@ -86,7 +86,7 @@ mensajeDinamico.classList.add('latido');
 // 📸 Generar galería de fotos automáticamente
 const galeria = document.getElementById('galeria');
 
-for (let i = 1; i <= 173; i++) {
+for (let i = 1; i <= 193; i++) {
   const img = document.createElement('img');
   img.src = `images/foto${i}.jpeg`;
   img.alt = `Foto ${i} de nosotros`;
@@ -197,3 +197,4 @@ videosEspeciales.forEach(src => {
 });
 
 }
+
